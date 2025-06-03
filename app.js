@@ -3,6 +3,7 @@ const connectDB = require('./config/db'); // DB connection
 const routes = require('./routes');       // imports index.js from routes folder
 
 const app = express();
+app.use(express.json());
 const PORT = 3000;
 
 app.use(express.json());
